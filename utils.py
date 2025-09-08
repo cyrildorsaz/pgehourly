@@ -21,7 +21,7 @@ def fetch_energy_data(start_date, end_date):
         "startdate": start_date,
         "enddate": end_date,
         "ratename": "EV2A",
-        "representativeCircuitId": "024040403",
+        "representativeCircuitId": "012640401",
         "program": "CalFUSE"
     }
 
