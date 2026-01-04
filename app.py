@@ -54,6 +54,11 @@ with col2:
 
 def fetch_and_display_data():
     try:
+        # Validate date range
+        if end_date < start_date:
+            st.error("End date must be on or after start date. Please adjust your date selection.")
+            return
+        
         with st.spinner('Fetching data...'):
             # Convert dates to required format (YYYYMMDD)
             start_str = start_date.strftime('%Y%m%d')
